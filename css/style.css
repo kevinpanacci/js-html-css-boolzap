@@ -44,9 +44,35 @@
     width: 100%;
     background: red;
 }
+/* Silenzia notifiche */
 
 #notifiche {
     background: lightblue;
+}
+
+.campana-notifiche {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.campana-notifiche i {
+    font-size: 50px;
+    padding-left: 5px;
+}
+
+.testo-notifiche {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.testo-notifiche h2 {
+    font-size: 19px;
 }
 
 
