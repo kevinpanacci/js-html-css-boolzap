@@ -3,3 +3,51 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.ms--bg-top {
+    width: 100vw;
+    height: 100px;
+    background: lightgreen;
+    position: relative;
+}
+
+.ms--bg-bot {
+    width: 100vw;
+    height: 100vh;
+    background: lightgrey;
+}
+
+.container {
+    position: absolute;
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    background: white;
+    left: 50%;
+    top: 510%;
+    transform: translate(-50%, -50%);
+}
+
+.chat {
+    width: 65%;
+    height: 100%;
+    border-left: 1px solid black;
+}
+
+.contatti {
+    width: 35%;
+    height: 100%;
+    float: left;
+}
+
+.profilo {
+    height: 80px;
+    width: 100%;
+    background: red;
+}
+
+.notifiche {
+    height: 10%;
+    width: 100%;
+    background: lightblue;
+}
