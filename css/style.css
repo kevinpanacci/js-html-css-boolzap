@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Sfondo */
 .ms--bg-top {
     width: 100vw;
     height: 100px;
@@ -16,7 +16,11 @@
     height: 100vh;
     background: lightgrey;
 }
+/* Fine sfondo */
 
+
+
+/* Schermata whatsapp */
 .container {
     position: absolute;
     width: 90vw;
@@ -28,12 +32,7 @@
     transform: translate(-50%, -50%);
 }
 
-.chat {
-    width: 65%;
-    height: 100%;
-    border-left: 1px solid black;
-}
-
+/* Lato sinistro */
 .contatti {
     width: 35%;
     height: 100%;
@@ -46,8 +45,71 @@
     background: red;
 }
 
-.notifiche {
+#notifiche {
+    background: lightblue;
+}
+
+
+
+/* Chat Research Form */
+.chat-search {
+    height: 5%;
+    width: 100%;
+}
+
+.chat-search i {
+    margin-left: 10px;
+    font-size: 20px;
+    padding-top: 12px;
+    padding-left: 10px;
+}
+
+input {
+    width: 89%;
+    border: 0;
+}
+
+/* FINE Chat research Form */
+
+
+
+
+/* cards conversazioni */
+.conversazioni {
+    width: 100%;
+    height: 77%;
+    overflow: auto;
+}
+.card {
     height: 10%;
     width: 100%;
-    background: lightblue;
+    border: 1px solid lightgrey;
+    display: flex;
+}
+
+.card .img-contatto {
+    width: 20%;
+    height: 100%;
+}
+
+.card .nome-contatto {
+    width: 65%;
+    height: 100%;
+}
+
+.card .orario {
+    width: 15%;
+    height: 100%;
+}
+.card img {
+    width: auto;
+    height: 100%;
+    padding-left: 20px;
+}
+
+/* Lato destro */
+.chat {
+    width: 65%;
+    height: 100%;
+    border-left: 1px solid black;
 }
