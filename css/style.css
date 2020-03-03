@@ -38,11 +38,41 @@
     height: 100%;
     float: left;
 }
+/* Profilo */
 
 .profilo {
     height: 80px;
     width: 100%;
-    background: red;
+    display: flex;
+}
+
+.img-profilo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-profilo img {
+    width: auto;
+    height: 90%;
+    padding-left: 5px;
+}
+
+.bottoni-profilo {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 35px;
+}
+
+.bottoni-profilo i {
+    font-size: 40px;
+    padding-left: 5px;
+    color: lightgrey;
 }
 /* Silenzia notifiche */
 
@@ -149,4 +179,35 @@ input {
     width: 65%;
     height: 100%;
     border-left: 1px solid black;
+}
+
+/* Profilo amico */
+.img-profilo-amico {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome-amico {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottoni-profilo-amico {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 35px;
+}
+
+.bottoni-profilo-amico i {
+    font-size: 30px;
+    padding-left: 15px;
+    color: lightgrey;
 }
