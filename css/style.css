@@ -14,15 +14,16 @@
 .ms--bg-top {
     width: 100vw;
     height: 100px;
-    background: lightgreen;
+    background: #009688;
     position: relative;
 }
 
 .ms--bg-bot {
     width: 100vw;
     height: 100vh;
-    background: lightgrey;
+    background: #dadbd3;
 }
+
 /* Fine sfondo */
 
 
@@ -51,6 +52,7 @@
     height: 80px;
     width: 100%;
     display: flex;
+    background: #ededed;
 }
 
 .img-profilo {
@@ -64,6 +66,7 @@
     width: auto;
     height: 90%;
     padding-left: 5px;
+    border-radius: 50%;
 }
 
 .bottoni-profilo {
@@ -77,14 +80,14 @@
 }
 
 .bottoni-profilo i {
-    font-size: 40px;
-    padding-left: 5px;
-    color: lightgrey;
+    font-size: 30px;
+    padding-left: 15px;
+    color: #919191;
 }
 /* Silenzia notifiche */
 
 #notifiche {
-    background: lightblue;
+    background: #9de1fe;
 }
 
 .campana-notifiche {
@@ -97,8 +100,14 @@
 }
 
 .campana-notifiche i {
-    font-size: 50px;
-    padding-left: 5px;
+    font-size: 20px;
+    color: #9de1fe;
+}
+
+.campana-notifiche span {
+    background: #f5fcff;
+    border-radius: 50%;
+    padding: 15px;
 }
 
 .testo-notifiche {
@@ -125,11 +134,13 @@
     font-size: 20px;
     padding-top: 12px;
     padding-left: 10px;
+    color: #919191;
 }
 
-input {
+.chat-search input {
     width: 89%;
     border: 0;
+    font-size: 16px;
 }
 
 /* FINE Chat research Form */
@@ -179,6 +190,7 @@ input {
     width: auto;
     height: 90%;
     padding-left: 5px;
+    border-radius: 50%;
 }
 
 /* Lato destro */
@@ -216,7 +228,7 @@ input {
 .bottoni-profilo-amico i {
     font-size: 30px;
     padding-left: 15px;
-    color: lightgrey;
+    color: #919191;
 }
 
 /* Conversazione */
@@ -228,7 +240,7 @@ input {
 
 
 #inviato {
-    background: lightgreen;
+    background: #dcf8c6;
     float: right;
     padding: 10px 5px;
     margin-right: 50px;
@@ -236,16 +248,35 @@ input {
 }
 
 #ricevuto {
-    background: lightgrey;
+    background: white;
     float: left;
     padding: 10px 5px;
     margin-left: 50px;
     border-radius: 15%;
+    margin-top: 50px;
 }
 
 
 
-/* Invio messaggio */
+/* Invio messaggio input */
 .messaggio {
     width: 100%;
+    height: 100px;
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.messaggio input {
+    margin: 0 20px;
+    width: 600px;
+    height: 100%;
+    font-size: 16px;
+    border: 0;
+}
+
+.messaggio i {
+    font-size: 30px;
+    color: #919191;
 }
