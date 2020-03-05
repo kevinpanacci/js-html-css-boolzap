@@ -256,6 +256,12 @@
     margin-top: 50px;
 }
 
+.orario {
+    font-size: 10px;
+    float: right;
+    margin-top: 3px;
+}
+
 
 
 /* Invio messaggio input */
