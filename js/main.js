@@ -30,10 +30,10 @@ $(document).ready(function(){
     $('#cerca-utente').keyup(function(event) {
         var carattereFiltro = $(this).val();
         $('.nome-contatto h2').each(function() {
-            if ($(this).text().toLowerCase().includes(carattereFiltro)) { 
-                $('.card').show();
+            if ($(this).text().toLowerCase().includes(carattereFiltro)) {
+                $(this).show();
             } else {
-                $('.card').hide();
+                $(this).hide();
             }
         });
     });
