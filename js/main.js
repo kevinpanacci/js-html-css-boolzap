@@ -29,8 +29,9 @@ $(document).ready(function(){
 // RICERCA UTENTE
     $('#cerca-utente').keyup(function(event) {
         var carattereFiltro = $(this).val();
-        $('.nome-contatto h2').each(function() {
-            if ($(this).text().toLowerCase().includes(carattereFiltro)) {
+        $('.card').each(function() {
+            var x = $(this).find('.nome-contatto h2').text().toLowerCase();
+            if (x.includes(carattereFiltro)) {
                 $(this).show();
             } else {
                 $(this).hide();
