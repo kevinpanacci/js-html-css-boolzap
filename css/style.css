@@ -239,7 +239,7 @@
 }
 
 
-#inviato {
+.inviato {
     background: #dcf8c6;
     float: right;
     padding: 10px 5px;
@@ -247,7 +247,7 @@
     border-radius: 15%;
 }
 
-#ricevuto {
+.ricevuto {
     background: white;
     float: left;
     padding: 10px 5px;
@@ -280,9 +280,14 @@
     height: 100%;
     font-size: 16px;
     border: 0;
+    padding: 35px 0;
 }
 
 .messaggio i {
     font-size: 30px;
     color: #919191;
+}
+
+.template {
+    display: none;
 }
