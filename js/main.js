@@ -1,6 +1,11 @@
 $(document).ready(function(){
     inviaMessaggio();
 
+    // function scroll() {
+    //     var pixelScroll = $('.conversazione.active').height();
+    //     $('.conversazione.active').scrollUp(pixelScroll);
+    // }
+
     function inviaMessaggio() {
         var d = new Date();
         var m = d.getMinutes();
@@ -38,5 +43,12 @@ $(document).ready(function(){
             }
         });
     });
+
+    //Selezione chat
+    $('.card').click(function() {
+            $(this).addClass('active');
+            $(this).siblings().removeClass('active');
+    });
+
 
 });
