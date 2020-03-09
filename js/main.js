@@ -31,6 +31,12 @@ $(document).ready(function(){
         $('.conversazione').append(messaggio); // Aggiungo in fondo alla lista nomi il messaggio
     }
 
+// cambio microfono
+    $('#chat-input').focus(function() {
+        $('#invia').toggleClass('fa fa-microphone fas fa-paper-plane');
+    });
+
+
 // RICERCA UTENTE
     $('#cerca-utente').keyup(function(event) {
         var carattereFiltro = $(this).val();
@@ -49,6 +55,4 @@ $(document).ready(function(){
             $(this).addClass('active');
             $(this).siblings().removeClass('active');
     });
-
-
 });
