@@ -326,6 +326,12 @@
     font-size: 15px;
 }
 
+.fas.fa-angle-down {
+    position: absolute;
+    bottom: 55%;
+    left: 90%;
+}
+
 .template {
     display: none;
 }
