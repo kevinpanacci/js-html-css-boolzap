@@ -202,7 +202,6 @@
     width: 65%;
     height: 100%;
     border-left: 1px solid black;
-    background: lightgrey;
 }
 
 /* Profilo amico */
@@ -242,6 +241,8 @@
     height: 80%;
     padding-top: 30px;
     overflow-y: scroll;
+    background-image: url("D:\Users\Kevin\Desktop\Boolean\js-html-css-boolzap\img\sfondo.png");
+    background-size: cover;
 }
 
 
@@ -250,7 +251,7 @@
     float: right;
     padding: 10px 5px;
     margin-right: 50px;
-    border-radius: 15%;
+    border-radius: 10%;
     margin-bottom: 10px;
 }
 
@@ -267,8 +268,12 @@
 .orario {
     font-size: 10px;
     float: right;
-    margin-top: 8px;
-    margin-left: 10px;
+    margin-top: -6px;
+    margin-left: 100px;
+}
+
+.text {
+    margin-left: 7px;
 }
 
 
@@ -285,6 +290,7 @@
     align-items: center;
 }
 
+
 .messaggio input {
     margin: 0 20px;
     width: 600px;
@@ -299,6 +305,27 @@
     color: #919191;
 }
 
+.dropdown-menu-msg {
+    height: 50px;
+    position: absolute;
+    background: white;
+    left: 20%;
+}
+
+.msg {
+    position: relative;
+}
+
+.msg-info {
+    padding: 5px;
+    font-size: 15px;
+}
+
+.msg-delete {
+    padding: 5px 5px 0 5px;
+    font-size: 15px;
+}
+
 .template {
     display: none;
 }
@@ -309,4 +336,8 @@
 
 .active {
     background: #d3d3d3;
+}
+
+.invisible {
+    display: none;
 }

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    // inviaMessaggio();
+
 
 // Utilizzo invio per mandare il messaggio
     $('.chat-input').keydown(function(event) {
@@ -32,6 +32,10 @@ $(document).ready(function(){
             $(this).siblings().removeClass('active');
     });
 
+//dropdown menu
+    $('.msg').click(function() {
+        $('.dropdown-menu-msg').toggleClass('invisible');
+    });
 
     // function inviaMessaggio() {
     //     var d = new Date();
@@ -70,10 +74,5 @@ $(document).ready(function(){
         messaggio.find('.orario').text(h + '.' + m);
         $('.conversazione').append(messaggio); // Aggiungo in fondo alla lista nomi il messaggio
     }
-
-
-
-
-
 
 });
