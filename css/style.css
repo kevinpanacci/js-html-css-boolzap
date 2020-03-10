@@ -241,7 +241,7 @@
     height: 80%;
     padding-top: 30px;
     overflow-y: scroll;
-    background-image: url("D:\Users\Kevin\Desktop\Boolean\js-html-css-boolzap\img\sfondo.png");
+    background-image: url("../img/sfondo.png");
     background-size: cover;
 }
 

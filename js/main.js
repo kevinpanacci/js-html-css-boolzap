@@ -33,7 +33,7 @@ $(document).ready(function(){
     });
 
 //dropdown menu
-    $('.fa-angle-down').click(function() {
+    $(document).on('click', '.fa-angle-down', function() {
         $('.dropdown-menu-msg').toggleClass('invisible');
     });
 
