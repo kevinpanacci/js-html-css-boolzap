@@ -212,6 +212,14 @@
     align-items: center;
 }
 
+.img-profilo-amico img {
+    width: auto;
+    height: 90%;
+    padding-left: 5px;
+    border-radius: 50%;
+}
+
+
 .nome-amico {
     display: flex;
     width: 60%;
@@ -344,6 +352,18 @@
     background: #d3d3d3;
 }
 
+.conversazione-container {
+    display: none;
+}
+
 .invisible {
     display: none;
 }
+
+.visible {
+    display: block;
+}
+
+/* .card[data-conversazione="4"] {
+    background: red;
+} */

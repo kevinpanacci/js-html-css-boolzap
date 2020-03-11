@@ -40,9 +40,9 @@
                         <input id="cerca-utente" type="text" placeholder="Cerca o inizia una nuova chat">
                     </form>
                     <div class="conversazioni">
-                        <div class="card active">
+                        <div class="card active" data-conversazione="0">
                             <div class="img-contatto">
-                                <img src="https://picsum.photos/300/300" alt="">
+                                <img src="https://picsum.photos/300/298" alt="">
                             </div>
                             <div class="nome-contatto">
                                 <h2>Fabio</h2>
@@ -52,9 +52,9 @@
                                 <p>18.00</p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-conversazione="1">
                             <div class="img-contatto">
-                                <img src="https://picsum.photos/300/300" alt="">
+                                <img src="https://picsum.photos/300/299" alt="">
                             </div>
                             <div class="nome-contatto">
                                 <h2>Mario</h2>
@@ -64,9 +64,9 @@
                                 <p>18.00</p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-conversazione="2">
                             <div class="img-contatto">
-                                <img src="https://picsum.photos/300/300" alt="">
+                                <img src="https://picsum.photos/301/300" alt="">
                             </div>
                             <div class="nome-contatto">
                                 <h2>Beppe</h2>
@@ -76,9 +76,9 @@
                                 <p>18.00</p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-conversazione="3">
                             <div class="img-contatto">
-                                <img src="https://picsum.photos/300/300" alt="">
+                                <img src="https://picsum.photos/298/300" alt="">
                             </div>
                             <div class="nome-contatto">
                                 <h2>Nello</h2>
@@ -88,9 +88,9 @@
                                 <p>18.00</p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-conversazione="4">
                             <div class="img-contatto">
-                                <img src="https://picsum.photos/300/300" alt="">
+                                <img src="https://picsum.photos/299/300" alt="">
                             </div>
                             <div class="nome-contatto">
                                 <h2>Giulia</h2>
@@ -100,9 +100,9 @@
                                 <p>18.00</p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-conversazione="5">
                             <div class="img-contatto">
-                                <img src="https://picsum.photos/300/300" alt="">
+                                <img src="https://picsum.photos/300/301" alt="">
                             </div>
                             <div class="nome-contatto">
                                 <h2>Alessandro</h2>
@@ -112,9 +112,9 @@
                                 <p>18.00</p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-conversazione="6">
                             <div class="img-contatto">
-                                <img src="https://picsum.photos/300/300" alt="">
+                                <img src="https://picsum.photos/300/302" alt="">
                             </div>
                             <div class="nome-contatto">
                                 <h2>Alessio</h2>
@@ -124,9 +124,9 @@
                                 <p>18.00</p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-conversazione="7">
                             <div class="img-contatto">
-                                <img src="https://picsum.photos/300/300" alt="">
+                                <img src="https://picsum.photos/303/300" alt="">
                             </div>
                             <div class="nome-contatto">
                                 <h2>Federico</h2>
@@ -136,9 +136,9 @@
                                 <p>18.00</p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-conversazione="8">
                             <div class="img-contatto">
-                                <img src="https://picsum.photos/300/300" alt="">
+                                <img src="https://picsum.photos/300/304" alt="">
                             </div>
                             <div class="nome-contatto">
                                 <h2>Federica</h2>
@@ -157,7 +157,7 @@
 
                 <div class="chat">
                     <div class="profilo">
-                        <div class="img-profilo">
+                        <div class="img-profilo-amico">
                             <img src="https://picsum.photos/300/300" alt="">
                         </div>
                         <div class="nome-amico">
@@ -175,17 +175,139 @@
 
 
                     <div class="conversazione clearfix">
-                        <div class="msg">
-                            <div class="contenuto-messaggio clearfix">
-                                <p class="text"></p>
-                                <p class="orario"></p>
-                            </div>
+                        <div class="conversazione-container visible" data-conversazione="0">
+                            <div class="msg">
+                                <div class="contenuto-messaggio clearfix">
+                                    <p class="text"></p>
+                                    <p class="orario"></p>
+                                </div>
 
+                            </div>
+                            <div class="msg">
+                                <div class="contenuto-messaggio clearfix">
+                                    <p class="text"></p>
+                                    <p class="orario"></p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="msg">
-                            <div class="contenuto-messaggio clearfix">
-                                <p class="text"></p>
-                                <p class="orario"></p>
+                        <div class="conversazione-container" data-conversazione="1">
+                            <div class="msg">
+                                <div class="contenuto-messaggio clearfix">
+                                    <p class="text"></p>
+                                    <p class="orario"></p>
+                                </div>
+
+                            </div>
+                            <div class="msg">
+                                <div class="contenuto-messaggio clearfix">
+                                    <p class="text"></p>
+                                    <p class="orario"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="conversazione-container" data-conversazione="2">
+                            <div class="msg">
+                                <div class="contenuto-messaggio clearfix">
+                                    <p class="text"></p>
+                                    <p class="orario"></p>
+                                </div>
+
+                            </div>
+                            <div class="msg">
+                                <div class="contenuto-messaggio clearfix">
+                                    <p class="text"></p>
+                                    <p class="orario"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="conversazione-container" data-conversazione="3">
+                            <div class="msg">
+                                <div class="contenuto-messaggio clearfix">
+                                    <p class="text"></p>
+                                    <p class="orario"></p>
+                                </div>
+
+                            </div>
+                            <div class="msg">
+                                <div class="contenuto-messaggio clearfix">
+                                    <p class="text"></p>
+                                    <p class="orario"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="conversazione-container" data-conversazione="4">
+                            <div class="msg">
+                                <div class="contenuto-messaggio clearfix">
+                                    <p class="text"></p>
+                                    <p class="orario"></p>
+                                </div>
+
+                            </div>
+                            <div class="msg">
+                                <div class="contenuto-messaggio clearfix">
+                                    <p class="text"></p>
+                                    <p class="orario"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="conversazione-container" data-conversazione="5">
+                            <div class="msg">
+                                <div class="contenuto-messaggio clearfix">
+                                    <p class="text"></p>
+                                    <p class="orario"></p>
+                                </div>
+
+                            </div>
+                            <div class="msg">
+                                <div class="contenuto-messaggio clearfix">
+                                    <p class="text"></p>
+                                    <p class="orario"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="conversazione-container" data-conversazione="6">
+                            <div class="msg">
+                                <div class="contenuto-messaggio clearfix">
+                                    <p class="text"></p>
+                                    <p class="orario"></p>
+                                </div>
+
+                            </div>
+                            <div class="msg">
+                                <div class="contenuto-messaggio clearfix">
+                                    <p class="text"></p>
+                                    <p class="orario"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="conversazione-container" data-conversazione="7">
+                            <div class="msg">
+                                <div class="contenuto-messaggio clearfix">
+                                    <p class="text"></p>
+                                    <p class="orario"></p>
+                                </div>
+
+                            </div>
+                            <div class="msg">
+                                <div class="contenuto-messaggio clearfix">
+                                    <p class="text"></p>
+                                    <p class="orario"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="conversazione-container" data-conversazione="8">
+                            <div class="msg">
+                                <div class="contenuto-messaggio clearfix">
+                                    <p class="text"></p>
+                                    <p class="orario"></p>
+                                </div>
+
+                            </div>
+                            <div class="msg">
+                                <div class="contenuto-messaggio clearfix">
+                                    <p class="text"></p>
+                                    <p class="orario"></p>
+                                </div>
                             </div>
                         </div>
                     </div>
