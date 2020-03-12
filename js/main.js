@@ -33,10 +33,7 @@ $(document).ready(function(){
     // });
 
 
-//dropdown menu
-    $(document).on('click', '.fa-angle-down', function() {
-        $('.dropdown-menu-msg').toggleClass('invisible');
-    });
+
 
     function inviaMessaggio() {
         var d = new Date();
@@ -73,12 +70,19 @@ $(document).ready(function(){
         chatCorrispondente.addClass('visible');    //nella conversazione giusta aggiungo l'active
 
         // PERSONALIZZAZIONE DELL'INTERFACCIA DI CHAT
-        // CAMBIO NOME
+// CAMBIO NOME
         var nomeContatto = $(this).find('h2').text(); //prendo il nome del contatto sul quale ho cliccato
         $('.nome-amico h2').text(nomeContatto); //sostituisco il nome con quello della chat cliccata
-        // CAMBIO IMMAGINE
+// CAMBIO IMMAGINE
         var srcContatto = $(this).find('.img-contatto').children('img').attr('src'); //prendo l'immagine cliccata
-        $('.img-profilo-amico').children('img').attr('src', srcContatto); 
+        $('.img-profilo-amico').children('img').attr('src', srcContatto);
+//DROPDOWN MENU - NON FUNZIONANTE (PER I SOLITI PROBLEMI DI HTML E CSS)
+        $(document).on('click', '.fa-angle-down', function() {
+            $('.dropdown-menu-msg').toggleClass('invisible');
+            // $(this).siblings('.dropdown-menu-msg').toggleClass('visible'); da continuare.....
+        });
+//CANCELLA MESSAGGIO
+
     });
 
 });

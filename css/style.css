@@ -10,360 +10,117 @@
   display: table;
 }
 
-/* Sfondo */
-.ms--bg-top {
-    width: 100vw;
-    height: 100px;
-    background: #009688;
+body {
     position: relative;
-}
-
-.ms--bg-bot {
     width: 100vw;
     height: 100vh;
-    background: #dadbd3;
+    background: rgb(0,150,136);
+    background: -webkit-linear-gradient(rgba(0,150,136,1) 25%, rgba(218,219,211,1) 25%);
+    background: -o-linear-gradient(rgba(0,150,136,1) 25%, rgba(218,219,211,1) 25%);
+    background: linear-gradient(rgba(0,150,136,1) 25%, rgba(218,219,211,1) 25%);
 }
 
-/* Fine sfondo */
-
-
-
-/* Schermata whatsapp */
-.container {
+.boolzapp-container {
+    width: 85vw;
+    height: 85vh;
     position: absolute;
-    width: 90vw;
-    height: 90vh;
-    display: flex;
-    background: white;
+    top: 50%;
     left: 50%;
-    top: 510%;
     transform: translate(-50%, -50%);
 }
 
-/* Lato sinistro */
-.contatti {
-    width: 35%;
-    height: 100%;
-    float: left;
-}
-/* Profilo */
-
-.profilo {
-    height: 80px;
-    width: 100%;
+.header {
+    height: 10%;
+    width 100%;
     display: flex;
     background: #ededed;
 }
-
-.img-profilo {
-    width: 20%;
+/* left header */
+.header-left {
     display: flex;
-    justify-content: center;
+    width: 35%;
+    height: 100%;
+    border-right: 1px solid #919191;
+}
+
+.immagine-mio-profilo, .immagine-interlocutore {
+    display: flex;
+    width: 25%;
     align-items: center;
 }
 
-.img-profilo img {
+.immagine-mio-profilo img, .immagine-interlocutore img {
+    height: 70%;
     width: auto;
-    height: 90%;
-    padding-left: 5px;
     border-radius: 50%;
+    margin-left: 20px;
 }
 
-.bottoni-profilo {
+.cta-icons {
+    width: 75%;
     display: flex;
-    width: 80%;
-    height: 100%;
-    flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 35px;
 }
 
-.bottoni-profilo i {
+.cta-icons i {
     font-size: 30px;
-    padding-left: 15px;
     color: #919191;
+    margin-right: 20px;
 }
-/* Silenzia notifiche */
 
-#notifiche {
-    background: #9de1fe;
-    height: 10%;
-    width: 100%;
-    border: 1px solid lightgrey;
+
+/* right header */
+.header-right {
     display: flex;
-}
-
-.campana-notifiche {
-    width: 20%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.campana-notifiche i {
-    font-size: 20px;
-    color: #9de1fe;
-}
-
-.campana-notifiche span {
-    background: #f5fcff;
-    border-radius: 50%;
-    padding: 15px;
-}
-
-.testo-notifiche {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 10px;
-}
-
-.testo-notifiche h2 {
-    font-size: 19px;
-}
-
-
-
-/* Chat Research Form */
-.chat-search {
-    height: 5%;
-    width: 100%;
-}
-
-.chat-search i {
-    margin-left: 10px;
-    font-size: 20px;
-    padding-top: 12px;
-    padding-left: 10px;
-    color: #919191;
-}
-
-.chat-search input {
-    width: 89%;
-    border: 0;
-    font-size: 16px;
-}
-
-/* FINE Chat research Form */
-
-
-
-
-/* cards conversazioni */
-.conversazioni {
-    width: 100%;
-    height: 77%;
-    overflow: auto;
-}
-.card {
-    height: 10%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    display: flex;
-}
-
-.card .img-contatto {
-    width: 20%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card .nome-contatto {
     width: 65%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 10px;
 }
 
-.card .orario {
+.immagine-interlocutore {
     width: 15%;
-    height: 100%;
+}
+
+.dati-interlocutore {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card img {
-    width: auto;
-    height: 90%;
-    padding-left: 5px;
-    border-radius: 50%;
-}
-
-/* Lato destro */
-.chat {
-    width: 65%;
-    height: 100%;
-    border-left: 1px solid black;
-}
-
-/* Profilo amico */
-.img-profilo-amico {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-profilo-amico img {
-    width: auto;
-    height: 90%;
-    padding-left: 5px;
-    border-radius: 50%;
-}
-
-
-.nome-amico {
-    display: flex;
-    width: 60%;
     flex-direction: column;
     justify-content: center;
 }
 
-.bottoni-profilo-amico {
+.dati-interlocutore p {
+    color: #919191;
+}
+
+.cta-icons-right {
+    width: 55%;
     display: flex;
-    width: 20%;
-    height: 100%;
-    flex-direction: row;
-    align-items: center;
     justify-content: flex-end;
-    padding-right: 35px;
-}
-
-.bottoni-profilo-amico i {
-    font-size: 30px;
-    padding-left: 15px;
-    color: #919191;
-}
-
-/* Conversazione */
-.conversazione {
-    width: 100%;
-    height: 80%;
-    padding-top: 30px;
-    overflow-y: scroll;
-    background-image: url("../img/sfondo.png");
-    background-size: cover;
-}
-
-
-.inviato {
-    background: #dcf8c6;
-    float: right;
-    padding: 10px 5px;
-    margin-right: 50px;
-    border-radius: 10%;
-    margin-bottom: 10px;
-}
-
-.ricevuto {
-    background: white;
-    float: left;
-    padding: 10px 5px;
-    margin-left: 50px;
-    border-radius: 15%;
-    margin-top: 50px;
-    margin-bottom: 10px;
-}
-
-.orario {
-    font-size: 10px;
-    float: right;
-    margin-top: -6px;
-    margin-left: 100px;
-}
-
-.text {
-    margin-left: 7px;
-}
-
-
-
-
-
-/* Invio messaggio input */
-.messaggio {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    margin-top: 15px;
-    justify-content: center;
     align-items: center;
 }
 
-
-.messaggio input {
-    margin: 0 20px;
-    width: 600px;
-    height: 100%;
-    font-size: 16px;
-    border: 0;
-    padding: 35px 0;
-}
-
-.messaggio i {
+.cta-icons-right i {
     font-size: 30px;
     color: #919191;
+    margin-right: 20px;
 }
-
-.dropdown-menu-msg {
-    height: 50px;
-    position: absolute;
-    background: white;
-    left: 20%;
+/* Main left */
+.main {
+    height: 90%;
+    width: 100%;
+    display: flex;
 }
-
-.msg {
-    position: relative;
-}
-
-.msg-info {
-    padding: 5px;
-    font-size: 15px;
-}
-
-.msg-delete {
-    padding: 5px 5px 0 5px;
-    font-size: 15px;
-}
-
-.fas.fa-angle-down {
-    position: absolute;
-    bottom: 55%;
-    left: 90%;
-}
-
-.template {
-    display: none;
-}
-
-.template-ricevuto {
-    display: none;
-}
-
-.active {
-    background: #d3d3d3;
-}
-
-.conversazione-container {
-    display: none;
-}
-
-.invisible {
-    display: none;
-}
-
-.visible {
-    display: block;
-}
-
-/* .card[data-conversazione="4"] {
+.main-left{
+    width: 35%;
+    height: 100%;
     background: red;
-} */
+    border-right: 1px solid #919191;
+}
+/* Main right */
+
+.main-right{
+    width: 65%;
+    height: 100%;
+    float: right;
+    margin: 0 auto;
+    background-image: url("../img/sfondo.png");
+}

@@ -2,366 +2,54 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Boolzapp</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js" charset="utf-8"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="ms--bg-top">
-            <div class="container">
-                <div class="contatti">
-                    <div class="profilo">
-                        <div class="img-profilo">
-                            <img src="https://picsum.photos/300/300" alt="">
-                        </div>
-                        <div class="bottoni-profilo">
-                            <i class="fa fa-circle-notch"></i>
-                            <i class="fa fa-comment-alt"></i>
-                            <i class="fa fa-ellipsis-v"></i>
-                        </div>
+
+        <div class="boolzapp-container clearfix">
+            <div class="header">
+                <div class="header-left">
+                    <div class="immagine-mio-profilo">
+                        <img src="https://picsum.photos/300/300" alt="">
                     </div>
-
-
-
-
-                    <div id="notifiche">
-                        <div class="campana-notifiche">
-                            <span><i class="fa fa-bell-slash"></i></span>
-                        </div>
-                        <div class="testo-notifiche">
-                            <h2>Ricevi notifiche di nuovi messaggi</h2>
-                            <a href="#">Attiva notifiche desktop</a>
-                        </div>
-                    </div>
-                    <form class="chat-search">
-                        <label><i class="fa fa-search"></i></label>
-                        <input id="cerca-utente" type="text" placeholder="Cerca o inizia una nuova chat">
-                    </form>
-                    <div class="conversazioni">
-                        <div class="card active" data-conversazione="0">
-                            <div class="img-contatto">
-                                <img src="https://picsum.photos/300/298" alt="">
-                            </div>
-                            <div class="nome-contatto">
-                                <h2>Fabio</h2>
-                                <p>Ciao! Come stai?</p>
-                            </div>
-                            <div class="orario">
-                                <p>18.00</p>
-                            </div>
-                        </div>
-                        <div class="card" data-conversazione="1">
-                            <div class="img-contatto">
-                                <img src="https://picsum.photos/300/299" alt="">
-                            </div>
-                            <div class="nome-contatto">
-                                <h2>Mario</h2>
-                                <p>Ciao! Come stai?</p>
-                            </div>
-                            <div class="orario">
-                                <p>18.00</p>
-                            </div>
-                        </div>
-                        <div class="card" data-conversazione="2">
-                            <div class="img-contatto">
-                                <img src="https://picsum.photos/301/300" alt="">
-                            </div>
-                            <div class="nome-contatto">
-                                <h2>Beppe</h2>
-                                <p>Ciao! Come stai?</p>
-                            </div>
-                            <div class="orario">
-                                <p>18.00</p>
-                            </div>
-                        </div>
-                        <div class="card" data-conversazione="3">
-                            <div class="img-contatto">
-                                <img src="https://picsum.photos/298/300" alt="">
-                            </div>
-                            <div class="nome-contatto">
-                                <h2>Nello</h2>
-                                <p>Ciao! Come stai?</p>
-                            </div>
-                            <div class="orario">
-                                <p>18.00</p>
-                            </div>
-                        </div>
-                        <div class="card" data-conversazione="4">
-                            <div class="img-contatto">
-                                <img src="https://picsum.photos/299/300" alt="">
-                            </div>
-                            <div class="nome-contatto">
-                                <h2>Giulia</h2>
-                                <p>Ciao! Come stai?</p>
-                            </div>
-                            <div class="orario">
-                                <p>18.00</p>
-                            </div>
-                        </div>
-                        <div class="card" data-conversazione="5">
-                            <div class="img-contatto">
-                                <img src="https://picsum.photos/300/301" alt="">
-                            </div>
-                            <div class="nome-contatto">
-                                <h2>Alessandro</h2>
-                                <p>Ciao! Come stai?</p>
-                            </div>
-                            <div class="orario">
-                                <p>18.00</p>
-                            </div>
-                        </div>
-                        <div class="card" data-conversazione="6">
-                            <div class="img-contatto">
-                                <img src="https://picsum.photos/300/302" alt="">
-                            </div>
-                            <div class="nome-contatto">
-                                <h2>Alessio</h2>
-                                <p>Ciao! Come stai?</p>
-                            </div>
-                            <div class="orario">
-                                <p>18.00</p>
-                            </div>
-                        </div>
-                        <div class="card" data-conversazione="7">
-                            <div class="img-contatto">
-                                <img src="https://picsum.photos/303/300" alt="">
-                            </div>
-                            <div class="nome-contatto">
-                                <h2>Federico</h2>
-                                <p>Ciao! Come stai?</p>
-                            </div>
-                            <div class="orario">
-                                <p>18.00</p>
-                            </div>
-                        </div>
-                        <div class="card" data-conversazione="8">
-                            <div class="img-contatto">
-                                <img src="https://picsum.photos/300/304" alt="">
-                            </div>
-                            <div class="nome-contatto">
-                                <h2>Federica</h2>
-                                <p>Ciao! Come stai?</p>
-                            </div>
-                            <div class="orario">
-                                <p>18.00</p>
-                            </div>
-                        </div>
+                    <div class="cta-icons">
+                        <i class="fa fa-circle-notch"></i>
+                        <i class="fa fa-comment-alt"></i>
+                        <i class="fa fa-ellipsis-v"></i>
                     </div>
                 </div>
-
-
-
-
-
-                <div class="chat">
-                    <div class="profilo">
-                        <div class="img-profilo-amico">
-                            <img src="https://picsum.photos/300/300" alt="">
-                        </div>
-                        <div class="nome-amico">
-                            <h2>Fabio</h2>
-                            <p>Ultimo accesso oggi alle 18.00</p>
-                        </div>
-                        <div class="bottoni-profilo-amico">
-                            <i class="fa fa-search"></i>
-                            <i class="fa fa-paperclip"></i>
-                            <i class="fa fa-ellipsis-v"></i>
-                        </div>
+                <div class="header-right">
+                    <div class="immagine-interlocutore">
+                        <img src="https://picsum.photos/299/300" alt="">
                     </div>
-
-
-
-
-                    <div class="conversazione clearfix">
-                        <div class="conversazione-container visible" data-conversazione="0">
-                            <div class="msg">
-                                <div class="contenuto-messaggio clearfix">
-                                    <p class="text"></p>
-                                    <p class="orario"></p>
-                                </div>
-
-                            </div>
-                            <div class="msg">
-                                <div class="contenuto-messaggio clearfix">
-                                    <p class="text"></p>
-                                    <p class="orario"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="conversazione-container" data-conversazione="1">
-                            <div class="msg">
-                                <div class="contenuto-messaggio clearfix">
-                                    <p class="text"></p>
-                                    <p class="orario"></p>
-                                </div>
-
-                            </div>
-                            <div class="msg">
-                                <div class="contenuto-messaggio clearfix">
-                                    <p class="text"></p>
-                                    <p class="orario"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="conversazione-container" data-conversazione="2">
-                            <div class="msg">
-                                <div class="contenuto-messaggio clearfix">
-                                    <p class="text"></p>
-                                    <p class="orario"></p>
-                                </div>
-
-                            </div>
-                            <div class="msg">
-                                <div class="contenuto-messaggio clearfix">
-                                    <p class="text"></p>
-                                    <p class="orario"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="conversazione-container" data-conversazione="3">
-                            <div class="msg">
-                                <div class="contenuto-messaggio clearfix">
-                                    <p class="text"></p>
-                                    <p class="orario"></p>
-                                </div>
-
-                            </div>
-                            <div class="msg">
-                                <div class="contenuto-messaggio clearfix">
-                                    <p class="text"></p>
-                                    <p class="orario"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="conversazione-container" data-conversazione="4">
-                            <div class="msg">
-                                <div class="contenuto-messaggio clearfix">
-                                    <p class="text"></p>
-                                    <p class="orario"></p>
-                                </div>
-
-                            </div>
-                            <div class="msg">
-                                <div class="contenuto-messaggio clearfix">
-                                    <p class="text"></p>
-                                    <p class="orario"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="conversazione-container" data-conversazione="5">
-                            <div class="msg">
-                                <div class="contenuto-messaggio clearfix">
-                                    <p class="text"></p>
-                                    <p class="orario"></p>
-                                </div>
-
-                            </div>
-                            <div class="msg">
-                                <div class="contenuto-messaggio clearfix">
-                                    <p class="text"></p>
-                                    <p class="orario"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="conversazione-container" data-conversazione="6">
-                            <div class="msg">
-                                <div class="contenuto-messaggio clearfix">
-                                    <p class="text"></p>
-                                    <p class="orario"></p>
-                                </div>
-
-                            </div>
-                            <div class="msg">
-                                <div class="contenuto-messaggio clearfix">
-                                    <p class="text"></p>
-                                    <p class="orario"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="conversazione-container" data-conversazione="7">
-                            <div class="msg">
-                                <div class="contenuto-messaggio clearfix">
-                                    <p class="text"></p>
-                                    <p class="orario"></p>
-                                </div>
-
-                            </div>
-                            <div class="msg">
-                                <div class="contenuto-messaggio clearfix">
-                                    <p class="text"></p>
-                                    <p class="orario"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="conversazione-container" data-conversazione="8">
-                            <div class="msg">
-                                <div class="contenuto-messaggio clearfix">
-                                    <p class="text"></p>
-                                    <p class="orario"></p>
-                                </div>
-
-                            </div>
-                            <div class="msg">
-                                <div class="contenuto-messaggio clearfix">
-                                    <p class="text"></p>
-                                    <p class="orario"></p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="dati-interlocutore">
+                        <h4>Fabio</h4>
+                        <p>Ultimo accesso oggi alle 15.40</p>
                     </div>
-
-
-                    <div class="messaggio">
-                        <i class="far fa-smile"></i>
-                        <div class="chat-input">
-                            <input id="chat-input" placeholder="Scrivi un messaggio">
-                        </div>
-                        <i id="invia" class="fa fa-microphone"></i>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="ms--bg-bot"></div>
-
-
-        <div class="template clearfix">
-            <div class="messaggio-da-copiare clearfix">
-                <div class="msg inviato clearfix">
-                    <p class="text"></p>
-                    <p class="orario"></p>
-                    <i class="fas fa-angle-down"></i>
-                    <div class="dropdown-menu-msg invisible">
-                        <div class="msg-info">
-                            <p class="info">Message info</p>
-                        </div>
-                        <div class="msg-delete">
-                            <p class="delete">Delete message</p>
-                        </div>
+                    <div class="cta-icons-right">
+                        <i class="fa fa-search"></i>
+                        <i class="fa fa-paperclip"></i>
+                        <i class="fa fa-ellipsis-v"></i>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="template-ricevuto clearfix">
-            <div class="messaggio-da-copiare clearfix">
-                <div class="msg ricevuto clearfix">
-                    <p class="text"></p>
-                    <p class="orario"></p>
-                    <i class="fas fa-angle-down"></i>
-                    <div class="dropdown-menu-msg invisible">
-                        <div class="msg-info">
-                            <p class="info">Message info</p>
-                        </div>
-                        <div class="msg-delete">
-                            <p class="delete">Delete message</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="main">
+                <div class="main-left"></div>
+                <div class="main-right"></div>
             </div>
         </div>
 
-    <script src="js/main.js" charset="utf-8"></script>
+
+
+
+
+
+
+        <script src="js/main.js" charset="utf-8"></script>
     </body>
 </html>
