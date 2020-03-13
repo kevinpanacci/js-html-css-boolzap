@@ -231,6 +231,7 @@ body {
     height: 100%;
     position: absolute;
     left: 5%;
+    display: none;
 }
 
 .messaggio {
@@ -272,4 +273,8 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     color: #919191;
+}
+
+.cta-messaggi.active {
+    display: block;
 }

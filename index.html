@@ -109,11 +109,25 @@
                     <div class="conversazione">
                         <div class="cta-messaggi active" data-conversazione="0">
                             <div class="messaggio clearfix">
-                                <p>Ciao come stai?</p>
+                                <p>Ciao Fabio come stai?</p>
                                 <small>17.53</small>
                             </div>
-                            <div class="messaggio inviato clearfix">
-                                <p>Ciao come stai?</p>
+                        </div>
+                        <div class="cta-messaggi" data-conversazione="1">
+                            <div class="messaggio clearfix">
+                                <p>Ciao Federico come stai?</p>
+                                <small>17.53</small>
+                            </div>
+                        </div>
+                        <div class="cta-messaggi" data-conversazione="2">
+                            <div class="messaggio clearfix">
+                                <p>Ciao Federica come stai?</p>
+                                <small>17.53</small>
+                            </div>
+                        </div>
+                        <div class="cta-messaggi" data-conversazione="3">
+                            <div class="messaggio clearfix">
+                                <p>Ciao Antonio come stai?</p>
                                 <small>17.53</small>
                             </div>
                         </div>
@@ -132,7 +146,13 @@
 
 
 
-
+        <script id="messaggio-template" type="text/x-handlebars-template">
+            <div class="messaggio {{direzione}} clearfix">
+                <p class="text">{{testoMessaggio}}</p>
+                <small>17.53</small>
+                <i class="fas fa-angle-down"></i>
+            </div>
+        </script>
         <script src="js/main.js" charset="utf-8"></script>
     </body>
 </html>
