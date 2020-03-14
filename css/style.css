@@ -236,15 +236,28 @@ body {
 
 .messaggio {
     background: white;
+    height: auto;
     width: 20%;
     border-radius: 10%;
     margin-top: 5px;
     padding: 10px 10px 5px 10px;
+    position: relative;
+}
+
+.messaggio i {
+    position: absolute;
+    left: 90%;
+    transform: translateY(-140%);
 }
 
 .inviato {
     background: #dcf8c6;
     float: right;
+}
+
+.ricevuto {
+    float: left;
+    background: white;
 }
 
 .messaggio small {
@@ -269,6 +282,7 @@ body {
 
 .footer input {
     width: 75%;
+    height: 60%;
     border: 0;
     margin-left: 5%;
     margin-right: 5%;
