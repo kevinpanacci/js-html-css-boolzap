@@ -146,7 +146,7 @@ $(document).ready(function() {
     var source = $('#template-contatti').html();
     var template = Handlebars.compile(source);
 
-    
+
 
     var datiContatto = {
         nome: nomeContatto,
