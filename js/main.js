@@ -47,7 +47,7 @@ $(document).ready(function() {
                 direzione: 'inviato'
             },
             {
-                testoMessaggio: 'Non c\'è male, ma Luca mi sta facendo impazzire',                  
+                testoMessaggio: 'Non c\'è male, ma Luca mi sta facendo impazzire',
                 direzione: 'ricevuto'
             }
         ],
@@ -58,7 +58,7 @@ $(document).ready(function() {
     function creaMsg(testoMsg, sentReceived, selettoreConversazione) {
         var datiMessaggio = {
             testoMessaggio: testoMsg,
-            direzione: 'inviato'
+            direzione: sentReceived
         };
         var templateMessaggio = template(datiMessaggio);
         $(selettoreConversazione).append(templateMessaggio);
@@ -120,6 +120,39 @@ $(document).ready(function() {
         var srcContatto = $(this).find('.immagine-contatto').children('img').attr('src');
         $('.immagine-interlocutore').children('img').attr('src', srcContatto);
     });
+
+    //Aggiunta chat utente
+    var nuoviContatti = {
+        c4: [
+            {
+                nome: 'Alessio',
+                immagine: 'https://picsum.photos/303/300'
+            }
+        ],
+        c5: [
+            {
+                nome: 'Fabrizio',
+                immagine: 'https://picsum.photos/303/301'
+            }
+        ],
+        c6: [
+            {
+                nome: 'Luca',
+                immagine: 'https://picsum.photos/303/302'
+            }
+        ],
+    };
+
+    var source = $('#template-contatti').html();
+    var template = Handlebars.compile(source);
+
+    
+
+    var datiContatto = {
+        nome: nomeContatto,
+        immagine: immagineContatto
+    };
+    var templateContatto = template(datiContatto);
 
 
 });
